@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 
 # List of URLs to check
 websites = [
-    "https://node1.jackalstorageprovider40.com/version",
 #   "add providers here",
     
 ]
@@ -29,7 +28,7 @@ def check_website(url, search_text):
         print(f"Error fetching {url}: {e}")
         return False
 
-# Loopty loop
+# Loopty loop through the URLs
 for site in websites:
     if check_website(site, search_text):
         print(f"Site {site} can receive grants.")
